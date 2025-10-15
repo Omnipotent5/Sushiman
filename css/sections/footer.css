@@ -2,7 +2,6 @@
     width: 100%;
     padding: 20px 40px;
     background: var(--color-white);
-
     flex-wrap: wrap;
     gap: 20px;
     overflow: hidden;
@@ -14,7 +13,6 @@
     font-family: var(--playfair-display);
     text-transform: uppercase;
     color: var(--secondary-color);
-
     cursor: pointer;
 }
 
@@ -22,15 +20,13 @@
     color: var(--primary-color);
 }
 
-.footer ul{
+.footer ul {
     list-style: none;
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 64px;
 }
-
 
 .footer ul:last-child {
     gap: 32px;
@@ -42,20 +38,31 @@
     font-family: var(--plus-jakarta-sans);
     text-transform: uppercase;
     color: var(--secondary-color);
-
     cursor: pointer;
 }
 
-.footer__socials li{
+.footer__socials li {
     width: 42px;
     height: 42px;
-
     background-color: var(--secondary-color);
-    border-radius: 100%;
+    border-radius: 50%; /* Changed from 100% to 50% for perfect circle */
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    justify-content: center; /* Add this */
+    padding: 8px; /* Add padding to make icons appear larger */
+}
+
+.footer__socials li a {
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    justify-content: center; /* Add this */
+    width: 100%; /* Add this */
+    height: 100%; /* Add this */
 }
 
 .footer__socials li img {
-    width: 45%;
-    height: 45%;
+    width: 60%; /* Increased from 45% */
+    height: 60%; /* Increased from 45% */
     object-fit: contain;
+    filter: brightness(0) invert(1); /* Optional: makes icons white */
 }
