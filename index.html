@@ -8,7 +8,7 @@
   <!-- favicon -->
   <link rel="icon" type="image/png" href="./sushi.png" />
   
-  <!-- CSS -->
+  <!-- CSS - Load AOS CSS first -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="./css/style.css">
   
@@ -174,7 +174,7 @@
 
       <section class="trending-sushi">
         <div class="trending__content" data-aos="fade-right">
-          <p class="sushi__subtitle">What’s Trending / トレンド</p>
+          <p class="sushi__subtitle">What's Trending / トレンド</p>
           <h3 class="sushi__title">Japanese Sushi</h3>
           <p class="sushi__description">Feel the taste of the most delicious Sushi here.</p>
           <ul class="trending__list flex-between">
@@ -243,7 +243,7 @@
           </div>
         </div>
         <div class="trending__content" data-aos="fade-left">
-          <p class="sushi__subtitle">What’s Trending / トレンド</p>
+          <p class="sushi__subtitle">What's Trending / トレンド</p>
           <h3 class="sushi__title">Japanese Drinks</h3>
           <p class="sushi__description">Feel the taste of the most delicious Japanese Drinks here.</p>
           <ul class="trending__list flex-between">
@@ -301,6 +301,7 @@
       </ul>
     </footer>
 
+  <!-- Scripts - Load AOS first, then your script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="module" src="./script.js"></script>
 </body>
